@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
 
-// Require routes
 const labelRouter = require("./routes/v1/label");
 
 // Import dotenv
@@ -15,7 +14,6 @@ app.use(express.urlencoded({ extended: false }));
 //Set static folder
 app.use(express.static("client/build"));
 
-// Connect mongoose
 mongoose.connect(
   process.env.mongoURL,
   { useUnifiedTopology: true, useNewUrlParser: true },
