@@ -13,6 +13,6 @@ router.post("/", labelController.createLabel);
 router.patch("/:labelId", labelController.updateLabel);
 
 // delete labels
-router.delete("/:/:labelId", labelController.deleteLabel);
+router.delete("/:labelId", labelController.deleteLabel);
 
 module.exports = router;
