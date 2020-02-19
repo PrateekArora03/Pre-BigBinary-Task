@@ -11,9 +11,6 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-//Set static folder
-app.use(express.static("client/build"));
-
 mongoose.connect(
   process.env.mongoURL,
   { useUnifiedTopology: true, useNewUrlParser: true },
