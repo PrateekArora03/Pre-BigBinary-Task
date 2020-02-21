@@ -6,4 +6,4 @@ Day 3 - 19 Feb -> Today I test label routes, and also setup client folder, and s
 
 Day 4 - 20 Feb -> Today I working on setup reducer, context for `GitHub-Label` and handle conditional for components.
 
-Day 5 - 21 Feb -> Today I am done with create ui also write css for the components. also work on update labels. and Now GitHub is workable:)
+Day 5 - 21 Feb -> Today I am done with create ui also write css for the components. also work on update labels. and Now GitHub Label is workable:)
