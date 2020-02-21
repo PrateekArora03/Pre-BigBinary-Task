@@ -26,11 +26,9 @@ export default (state, action) => {
     case UPDATE_LABEL:
       return {
         ...state,
-        labels: state.labels.map(label => {
-          if (label._id === action.payload._id) {
-            label = action.payload;
-          }
-        })
+        labels: state.labels.map(label =>
+          label._id === action.payload._id ? action.payload : label
+        )
       };
     case DELETE_LABEL:
       return {
