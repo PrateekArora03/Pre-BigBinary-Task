@@ -47,7 +47,6 @@ module.exports = {
       const deletedLabel = await Label.deleteOne({ _id: req.params.labelId });
       res.status(204).json({ deletedLabel });
     } catch (error) {
-      console.log(error);
       error = error.message || "Try again something went wrong!";
       res.status(400).json({ error });
     }
