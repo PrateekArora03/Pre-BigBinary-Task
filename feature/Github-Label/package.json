@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node app.js",
+    "start:prod": "NODE_ENV=production node app.js",
     "server": "nodemon app.js",
     "client": "npm start --prefix client",
     "client-install": "npm install --prefix client",
