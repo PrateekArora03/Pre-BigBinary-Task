@@ -1,7 +1,19 @@
 import React from "react";
 
-function App() {
-  return <div className="App">Welcome to GitHub Label</div>;
-}
+import Home from "./components/pages/Home";
+
+import LabelState from "./context/label/LabelState";
+
+import "./App.scss";
+
+const App = () => {
+  return (
+    <LabelState>
+      <div className="App">
+        <Home />
+      </div>
+    </LabelState>
+  );
+};
 
 export default App;
